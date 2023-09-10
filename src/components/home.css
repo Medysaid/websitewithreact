@@ -1,0 +1,230 @@
+.nav{
+    position: relative;
+    /* width: 100%; */
+    height: 30px;
+    background-color: rgb(244, 243, 245);
+    margin: 10px 0px -18px 0px;
+    border-radius: 2px;
+    color: black;
+    align-items: center;
+}
+
+.top-nave{
+    margin: 0px 200px 0px 200px;
+    align-items: center;
+}
+
+.nav-header{
+    height: 350px;
+    background-image: url("./../assets/images/pck2.jpg");
+    
+}
+.nav-header-tittle {
+    border: 2px solid rgb(195, 186, 186);
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    padding: 10px;
+    
+}
+
+.nav-header-tittle p{
+   color: white;
+
+}
+
+.container-main{
+    margin: 0px 200px 0px 200px;
+    align-items: center;
+}
+.tab-cn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;  */
+}
+
+.container-main .heading center h3{
+    font-size: 30px;
+}
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  .tabcontent {
+    display: none;
+    /* padding: 6px 12px; */
+    /* border: 1px solid #ccc; */
+    border-top: none;
+  }
+  .tabcontent1 {
+    /* display: block; */
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+  }
+
+  .card {
+    float: right;
+    position: relative;
+    width: 300px;
+    height: 480px;
+    background: #f1eeee;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0px 2px 5px 2px;
+  }
+  
+  .card::before {
+    
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #dcdbd4;
+    transform: skewY(345deg);
+    transition: 0.5s;
+  }
+  
+  .card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+  }
+  
+  .card::after {
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+  }
+  /*
+  .card .imgBox img {
+      max-width: 100%;
+      
+      transition: .5s;
+  }
+  
+  .card:hover .imgBox img {
+      max-width: 50%;
+        
+  }
+  */
+  .card .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  
+  .card .contentBox h3 {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .card .contentBox .price {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .card .contentBox .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    background: #ffce00;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+  
+  .card:hover .contentBox .buy {
+    top: 0;
+    opacity: 1;
+  }
+  
+  .mouse {
+    height: 300px;
+    width: auto;
+  }
+
+  .div-list {
+  
+
+    /* You can add other CSS properties here to control alignment, spacing, etc. */
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
